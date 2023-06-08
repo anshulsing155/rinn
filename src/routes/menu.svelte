@@ -1,302 +1,302 @@
 <script>
     import "../app.css";
+    export let data = '';
+
+    let isExpanded = false;
+    let isRefinancing = false;
+    function clickHandler() {
+        isExpanded = !isExpanded;
+    }
+    function clickHandler1() {
+        isRefinancing = !isRefinancing;
+    }
+
+    let showMenu = false;
+
+    function toggleNavbar() {
+        showMenu = !showMenu;
+    }
 </script>
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-    <div
-    
-        class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4"
-    >
-        <a
-            href="#"
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Rinn.in</a
-        >
-        <div class="flex items-center md:order-2">
-            <a
-                href="#"
-                class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-                >Login</a
-            >
-            <a
-                href="#"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                >Sign up</a
-            >
-            <button
-                data-collapse-toggle="mega-menu"
-                type="button"
-                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="mega-menu"
-                aria-expanded="false"
-            >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                    aria-hidden="true"
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    ><path
-                        fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"
-                    /></svg
-                >
-            </button>
+<div class="w-full bg-gray-100">
+    <div class=" flex flex-row justify-between w-11/12 p-4 m-auto">
+        <div>
+            <p>
+                <strong>$100 billion</strong> in online home loans
+            </p>
         </div>
+        <div class="order-1">
+            <svg aria-labelledby="phone-icon" height="36" role="img" fill="#fffdfa" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="css-nun7st"><title id="phone-icon">phone</title><path clip-rule="evenodd" d="M1 0H4.5C5.05 0 5.5 0.45 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79C5.06 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.61 11.99 12.86 11.89 13.12 11.89C13.22 11.89 13.33 11.9 13.43 11.94C14.55 12.31 15.76 12.51 17 12.51C17.55 12.51 18 12.96 18 13.51V17C18 17.55 17.55 18 17 18C7.61 18 0 10.39 0 1C0 0.45 0.45 0 1 0ZM3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02Z" fill="#fffdfa" fill-rule="evenodd"></path></svg>
+            <p>
+                <a href="tel:4155238837"> (415) 523 8837</a><span
+                    >Questions?</span
+                > Give us a call.
+            </p>
+        </div>
+    </div>
+</div>
+<header class="">
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div
-            id="mega-menu"
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            class=" w-11/12 p-2 flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
         >
-            <ul
-                class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0"
+            <a href="/" class="flex items-center">
+                <!-- <img
+                    src="#"
+                    class="mr-3 h-6 sm:h-9"
+                    alt=" Logo"
+                /> -->
+                <span
+                    class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+                    >ऋण.In</span
+                >
+            </a>
+            <div class="flex items-center lg:order-2">
+                <a
+                    href="#"
+                    class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                    >Sign In</a
+                >
+                <a
+                    href="#"
+                    class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+                    >{data.visited ? 'friend' : 'stranger'}!</a
+                >
+                <button
+                    data-collapse-toggle="mobile-menu-2"
+                    type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                        class="w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                        /></svg
+                    >
+                    <svg
+                        class="hidden w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><path
+                            fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                        /></svg
+                    >
+                </button>
+            </div>
+            <div
+                class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+                id="mobile-menu-2"
             >
-                <li>
-                    <a
-                        href="#"
-                        class="block py-2 pl-3 pr-4 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-                        aria-current="page">Home</a
-                    >
-                </li>
-                <li>
-                    <button
-                        id="mega-menu-dropdown-button"
-                        data-dropdown-toggle="mega-menu-dropdown"
-                        class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-                    >
-                        Company <svg
-                            aria-hidden="true"
-                            class="w-5 h-5 ml-1"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
-                            /></svg
+                <ul
+                    class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+                >
+                    <li class="dropdown ">
+                        <a
+                            href="#"
+                            class="  py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Buy or Sell</a
                         >
-                    </button>
-                    <div
-                        id="mega-menu-dropdown"
-                        class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
-                    >
-                        <div
-                            class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white"
-                        >
-                            <ul
-                                class="space-y-4"
-                                aria-labelledby="mega-menu-dropdown-button"
+                        <!-- <div class="caret m-2"></div> -->
+                        <ul
+                            class="dropdown-menu absolute hidden bg-white z-50  w-60 text-gray-700 "
                             >
-                                <li>
+                            <br>
+                                <li class="hover:bg-gray-200 ">
+                                    
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">Apply Now</a
                                     >
-                                        About Us
-                                    </a>
                                 </li>
-                                <li>
+                                <li class="hover:bg-gray-200">
+                                    
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="/mortgage-rates/purchase">Purchase rates
+                                        </a
                                     >
-                                        Library
-                                    </a>
                                 </li>
-                                <li>
+                                <li class="hover:bg-gray-200">
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        Find an Agent
+                                        </a
                                     >
-                                        Resources
-                                    </a>
                                 </li>
-                                <li>
+                                <li class="hover:bg-gray-200">
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        
+                                        Mortgage calculator
+                                        </a
                                     >
-                                        Pro Version
-                                    </a>
+                                </li>
+                                <li class="hover:bg-gray-200">
+                                    <a
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        
+                                        
+                                        Learning Center</a
+                                    >
                                 </li>
                             </ul>
-                        </div>
-                        <div
-                            class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white"
+                    </li>
+                    <li class="dropdown ">
+                        <a
+                            href="#"
+                            class="block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Refinance</a
                         >
-                            <ul class="space-y-4">
-                                <li>
+                        <ul
+                            class="dropdown-menu absolute hidden bg-white z-50 py-2 w-60 text-gray-700"
+                            >
+                            <br>
+                                <li class="hover:bg-gray-200 ">
+                                    
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">Apply Now</a
                                     >
-                                        Blog
-                                    </a>
                                 </li>
-                                <li>
+                                <li class="hover:bg-gray-200">
+                                    
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="/mortgage-rates/refinance">Purchase rates
+                                        </a
                                     >
-                                        Newsletter
-                                    </a>
                                 </li>
-                                <li>
+                                <li class="hover:bg-gray-200">
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        Find an Agent
+                                        </a
                                     >
-                                        Playground
-                                    </a>
                                 </li>
-                                <li>
+                                <li class="hover:bg-gray-200">
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        
+                                        Mortgage calculator
+                                        </a
                                     >
-                                        License
-                                    </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="p-4">
-                            <ul class="space-y-4">
-                                <li>
+                                <li class="hover:bg-gray-200">
                                     <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        
+                                        
+                                        Learning Center</a
                                     >
-                                        Contact Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                                    >
-                                        Support Center
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
-                                    >
-                                        Terms
-                                    </a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a
-                        href="#"
-                        class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-                        >Team</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="#"
-                        class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
-                        >Contact</a
-                    >
-                </li>
-            </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a
+                            href="#"
+                            class=" py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">LAP</a
+                        > <!--<div class="caret "></div> -->
+                        <ul
+                            class="dropdown-menu absolute hidden bg-white z-50 py-2 w-60 text-gray-700"
+                            >
+                            <br>
+                                <li class="hover:bg-gray-200 block">
+                                    
+                                    <a
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">Apply Now</a
+                                    >
+                                </li>
+                                <li class="hover:bg-gray-200">
+                                    
+                                    <a
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">Purchase rates
+                                        </a
+                                    >
+                                </li>
+                                <li class="hover:bg-gray-200">
+                                    <a
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        Find an Agent
+                                        </a
+                                    >
+                                </li>
+                                <li class="hover:bg-gray-200">
+                                    <a
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        
+                                        Mortgage calculator
+                                        </a
+                                    >
+                                </li>
+                                <li class="hover:bg-gray-200">
+                                    <a
+                                        class="rounded-t hover:bg-gray-200 py-4 px-6 block whitespace-normal "
+                                        href="#">
+                                        
+                                        
+                                        Learning Center</a
+                                    >
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                            >Rates</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                            >Better+</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                            >Home Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
-<!-- 
-<header>
-    <div class="top-bar">
-        <div class="topbar-item1">
-            (415) 523 8837 Questions? &nbsp; We’re always open.
-        </div>
-        <div class="topbar-item2">$100 billion in online home loans</div>
-    </div>
-    <div class="main-menu">
-        <div class="logo">
-            <a href="#home">Rinn.in</a>
-        </div>
-        <div class="menu">
-            {#each main_menu as item}
-                    <a href="#item">{item}</a>
-            {/each}
-        </div>
-        <div class="side-menu">
-            <div class="side-menu1"><a href="signin">Sing in</a></div>
-            <div class="side-menu2"><a href="getstarted">Get started</a></div>
-        </div>
-    </div>
+    </nav>
 </header>
-<hr>
-
 <style>
-    header {
-            padding: 0 10%;
-        }
-
-        /* Top-bar Style */
-
-        .top-bar{
-            display: flex;
-        }
-        .topbar-item1{
-            flex-grow: 1;
-        }
-        .topbar-item2{
-            flex-grow: 1;
-            text-align: right;
-        }
-        /* main-menu style */
-    .main-menu{
-        display: flex;
-
-    }
-    .logo{
-        flex-grow: 1;
-    }
-    .logo a{
-        font-size: 50px;
-        color: black;
-    }
-    .menu{
-        margin-top: 35px;
-        flex-grow: 1;
-    }
-    .menu a{
-        color: black;
-        padding: 10px;
-        margin: 20px;
-    }
-    .side-menu{
-        flex-grow: 1;
-        display: flex;
-        margin-top: 30px;
-        text-align: right;
-        
-    }
-    .side-menu1{
-        flex-grow: 1;
-    }
-    .side-menu1 a{
-        color: black;
-    }
-    .side-menu2{
-        flex-grow: 1;
-    }
-    .side-menu2 a{
-        color: black;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 5px;
-        width: 200px;
-    }
-    hr{
-        border: 1px solid green;
-    }
-</style> -->
+    .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    transition: 0.3s;
+}
+.caret-rotate {
+    transform: rotate(180deg);
+}
+</style>
