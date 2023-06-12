@@ -1,8 +1,8 @@
 <script>
     import { goto } from "$app/navigation";
-
-    let selected = "";
-
+    import ProgressBar from "../../components/ProgressBar.svelte";
+    let progress = 21.45;
+   
     function onChange(event) {
         event.currentTarget.value;
         if (event.currentTarget.value == "next") {
@@ -10,13 +10,13 @@
         }
     }
 </script>
-
+<ProgressBar {progress} />
 <main>
     <form class="form-container">
         <label for=""
             >Property State:
             <input
-                checked={selected === 10}
+                
                 type="Text"
                 name="amount"
                 placeholder="Enter Property State"
@@ -26,7 +26,7 @@
             >Property City:
 
             <input
-                checked={selected === 20}
+               
                 type="text"
                 name="amount"
                 placeholder=" Enter Property City"
@@ -34,7 +34,7 @@
         </label>
         <label class="next">
             <input
-                checked={selected === 10}
+
                 on:change={onChange}
                 type="radio"
                 name="amount"
@@ -92,8 +92,7 @@
         border-radius: 10px;
     }
     input[type="radio"] {
-        visibility: hidden;
-        
+       visibility: hidden;
     }
     
 .next{

@@ -1,46 +1,31 @@
 <script>
     import { goto } from "$app/navigation";
-    import ProgressBar from "../../components/ProgressBar.svelte";
-    let progress = 71.5;
-   
+        let selected = "";
+        import ProgressBar from "../../components/ProgressBar.svelte";
+    let progress = 57.2;
     function onChange(event) {
         event.currentTarget.value;
         if (event.currentTarget.value == "next") {
-            goto("../start/details");
+            goto("../start/ROI");
         }
     }
 </script>
 <ProgressBar {progress} />
 <main>
     <form class="form-container">
-        <label for=""
-            >Name:
-            <input
-                
-                type="Text"
-                name="amount"
-                placeholder="Enter Name"
-            />
-        </label>
-        <label for=""
-            >Contact No.:
-
-            <input
-               
-                type="text"
-                name="amount"
-                placeholder=" Enter Contact No."
-            />
+        <label for="state"
+            >Your Financial Institute::
+            <input type="text"  id="state" name="amount" placeholder="Enter Your Bank " />
         </label>
         <label class="next">
             <input
-
                 on:change={onChange}
                 type="radio"
                 name="amount"
                 value="next"
             />Next
         </label>
+        
         <!-- <button on:change={onChange} value="next">Next</button> -->
         <!-- <button type="submit">Submit</button> -->
     </form>
@@ -81,7 +66,6 @@
         border-radius: 10px;
     }
     input[type="text"] {
-        display: block;
         padding: 0.5rem 0;
         margin-top: 0.5rem;
         border-width: 1px;
@@ -93,7 +77,7 @@
         border-radius: 10px;
     }
     input[type="radio"] {
-       visibility: hidden;
+    visibility: hidden; 
     }
     
 .next{

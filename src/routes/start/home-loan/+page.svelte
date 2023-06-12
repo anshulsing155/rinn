@@ -1,8 +1,11 @@
 <script>
     import { goto } from "$app/navigation";
-
-    let selected = "";
-
+    import { path } from "../store";
+    import ProgressBar from "../../components/ProgressBar.svelte";
+    let progress = 7.15;
+        // function pathVal(){
+    //     pathValue = true;
+    // }
     function onChange(event) {
         event.currentTarget.value;
         if (event.currentTarget.value == "buy") {
@@ -10,16 +13,17 @@
         } else if (event.currentTarget.value == "lap") {
             goto("../start/Property-Location");
         } else if (event.currentTarget.value == "balance") {
+            path.set(true);
             goto("../start/Working-Location");
         }
     }
 </script>
-
+<ProgressBar {progress} />
 <main>
     <form class="form-container" action="" method="POST">
         <label>
             <input
-                checked={selected === 10}
+                
                 on:change={onChange}
                 type="radio"
                 name="amount"
@@ -28,7 +32,7 @@
         </label>
         <label>
             <input
-                checked={selected === 20}
+                
                 on:change={onChange}
                 type="radio"
                 name="amount"
@@ -37,7 +41,7 @@
         </label>
         <label>
             <input
-                checked={selected === 30}
+                
                 on:change={onChange}
                 type="radio"
                 name="amount"

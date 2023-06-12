@@ -1,21 +1,7 @@
 <script>
     import "../app.css";
     export let data = '';
-
-    let isExpanded = false;
-    let isRefinancing = false;
-    function clickHandler() {
-        isExpanded = !isExpanded;
-    }
-    function clickHandler1() {
-        isRefinancing = !isRefinancing;
-    }
-
-    let showMenu = false;
-
-    function toggleNavbar() {
-        showMenu = !showMenu;
-    }
+    
 </script>
 
 <div class="w-full bg-gray-100">
@@ -26,7 +12,7 @@
             </p>
         </div>
         <div class="order-1">
-            <svg aria-labelledby="phone-icon" height="36" role="img" fill="#fffdfa" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="css-nun7st"><title id="phone-icon">phone</title><path clip-rule="evenodd" d="M1 0H4.5C5.05 0 5.5 0.45 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79C5.06 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.61 11.99 12.86 11.89 13.12 11.89C13.22 11.89 13.33 11.9 13.43 11.94C14.55 12.31 15.76 12.51 17 12.51C17.55 12.51 18 12.96 18 13.51V17C18 17.55 17.55 18 17 18C7.61 18 0 10.39 0 1C0 0.45 0.45 0 1 0ZM3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02Z" fill="#fffdfa" fill-rule="evenodd"></path></svg>
+            
             <p>
                 <a href="tel:4155238837"> (415) 523 8837</a><span
                     >Questions?</span
@@ -58,9 +44,9 @@
                     >Sign In</a
                 >
                 <a
-                    href="#"
+                    href="/start"
                     class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-                    >{data.visited ? 'friend' : 'stranger'}!</a
+                    >{data.visited ? 'friend' : 'Get Started'}</a
                 >
                 <button
                     data-collapse-toggle="mobile-menu-2"
@@ -106,7 +92,7 @@
                             href="#"
                             class="  py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-gray-700 lg:p-0 dark:text-white">Buy or Sell</a
                         >
-                        <!-- <div class="caret m-2"></div> -->
+                        <div class="caret m-2"></div>
                         <ul
                             class="dropdown-menu absolute hidden bg-white z-50  w-60 text-gray-700 "
                             >
