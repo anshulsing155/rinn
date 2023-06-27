@@ -1,25 +1,32 @@
 <script>
     import { goto } from "$app/navigation";
     import { balance } from './store.js';
+    import { home } from './store.js';
     import ProgressBar from "../components/ProgressBar.svelte";
     let progress = 0;
-
+    let value;
     function onChange(event) {
-        event.currentTarget.value;
+        value = event.currentTarget.value;
+            home.set(value);
         if (event.currentTarget.value == "buy") {
             goto("../start/home-loan"); 
+            
         } else if (event.currentTarget.value == "lap") {
             goto("../start/Property-Location");
+            
         } else if (event.currentTarget.value == "balance") {
             balance.set(true);
+           
             goto("../start/Property-Location");
         }
     }
+    
 </script>
 
+<ProgressBar {progress} />
 <main>
-    <ProgressBar {progress} />
-    <form class="form-container" action="" method="POST">
+    
+    <form  class="form-container" method="POST">
         <label>
             <input
                 on:change={onChange}
@@ -49,38 +56,47 @@
     </form>
 </main>
 <style>
-    @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+   @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
     box-sizing: border-box;
 }
 
-main {
+main{
     font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
     overflow: hidden;
     margin: 0;
-}
-.form-container {
+}.form-container {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1),  0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     padding: 50px 20px;
     text-align: center;
-    width: 450px;
-    margin: 10% auto;
+    max-width: 100%;
+    width: 60%;
 }
 label {
-    display:block;
+    display: block;
     margin: 1rem 0;
-    text-align: left;
+    text-align: center;
     border: 1;
-    padding: 1rem;
+    padding: 1em;
     border: 1px solid gray;
     border-radius: 10px;
-    font-weight: 550;
-    font-size: large;
+    width: 40%;
+    margin: 10px auto;
+
 }
-input{
+input { 
+    
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    border-width: 1px;
+    border-radius: 0.25rem;
     visibility: hidden;
 }
 </style>

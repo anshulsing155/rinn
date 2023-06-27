@@ -1,6 +1,7 @@
 <script>
     import { goto } from "$app/navigation";
     import { path } from "../store";
+    import { home } from "../store";
     import ProgressBar from "../../components/ProgressBar.svelte";
     let progress = 7.15;
         // function pathVal(){
@@ -17,8 +18,18 @@
             goto("../start/Working-Location");
         }
     }
+    let countValue;
+
+	home.subscribe(value => {
+		countValue = value;
+	});
+
+	
 </script>
+{countValue}
+
 <ProgressBar {progress} />
+
 <main>
     <form class="form-container" action="" method="POST">
         <label>
@@ -64,7 +75,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+       
         overflow: hidden;
         margin: 0;
     }.form-container {
@@ -74,16 +85,18 @@
 		padding: 50px 20px;
 		text-align: center;
 		max-width: 100%;
-		width: 350px;
+		width: 60%;
 	}
     label {
         display: block;
         margin: 1rem 0;
-		text-align: left;
+		text-align: center;
         border: 1;
         padding: 1em;
         border: 1px solid gray;
         border-radius: 10px;
+        width: 40%;
+        margin: 10px auto;
 
     }
     input { 

@@ -5,7 +5,7 @@
     function onChange(event) {
         event.currentTarget.value;
         if (event.currentTarget.value == "next") {
-            goto("../start/details");
+            goto("../start/Executive");
         }
     }
 </script>
