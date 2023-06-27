@@ -1,0 +1,23 @@
+{
+	"/": [
+		"src/routes/+page.server.js"
+	],
+	"/mortgage-rates": [],
+	"/mortgage-rates/purchase": [],
+	"/start": [
+		"src/routes/start/+page.server.js"
+	],
+	"/start/Documents": [],
+	"/start/Executive": [],
+	"/start/Financial-Institution": [],
+	"/start/Master-plan": [],
+	"/start/Property-Location": [],
+	"/start/Property-Type": [],
+	"/start/ROI": [],
+	"/start/Referral": [],
+	"/start/Working-Location": [],
+	"/start/admin": [],
+	"/start/details": [],
+	"/start/home-loan": [],
+	"/start/properties-owned": []
+}
