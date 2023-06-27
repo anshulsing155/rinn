@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
-    export let data = '';
+    
     
 </script>
 
@@ -46,7 +46,7 @@
                 <a
                     href="/start"
                     class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-                    >{data.visited ? 'friend' : 'Get Started'}</a
+                    >Get Started</a
                 >
                 <button
                     data-collapse-toggle="mobile-menu-2"
@@ -147,7 +147,7 @@
                         >
                         <ul
                             class="dropdown-menu absolute hidden bg-white z-50 py-2 w-60 text-gray-700"
-                            >
+                            >   
                             <br>
                                 <li class="hover:bg-gray-200 ">
                                     
