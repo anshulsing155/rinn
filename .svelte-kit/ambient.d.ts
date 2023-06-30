@@ -26,7 +26,6 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const DB_URI: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
@@ -49,12 +48,10 @@ declare module '$env/static/private' {
 	export const LOCALAPPDATA: string;
 	export const LOGONSERVER: string;
 	export const NODE: string;
-	export const NODE_ENV: string;
 	export const NODE_EXE: string;
 	export const NPM_CLI_JS: string;
 	export const npm_command: string;
 	export const npm_config_cache: string;
-	export const npm_config_engine_strict: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_global_prefix: string;
 	export const npm_config_init_module: string;
@@ -63,15 +60,21 @@ declare module '$env/static/private' {
 	export const npm_config_node_gyp: string;
 	export const npm_config_noproxy: string;
 	export const npm_config_prefix: string;
-	export const npm_config_resolution_mode: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_user_agent: string;
 	export const npm_execpath: string;
 	export const npm_lifecycle_event: string;
 	export const npm_lifecycle_script: string;
 	export const npm_node_execpath: string;
+	export const npm_package_dev: string;
+	export const npm_package_dev_optional: string;
+	export const npm_package_engines_node: string;
+	export const npm_package_integrity: string;
 	export const npm_package_json: string;
 	export const npm_package_name: string;
+	export const npm_package_optional: string;
+	export const npm_package_peer: string;
+	export const npm_package_resolved: string;
 	export const npm_package_version: string;
 	export const NPM_PREFIX_NPM_CLI_JS: string;
 	export const NUMBER_OF_PROCESSORS: string;
@@ -138,7 +141,6 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		DB_URI: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
@@ -161,12 +163,10 @@ declare module '$env/dynamic/private' {
 		LOCALAPPDATA: string;
 		LOGONSERVER: string;
 		NODE: string;
-		NODE_ENV: string;
 		NODE_EXE: string;
 		NPM_CLI_JS: string;
 		npm_command: string;
 		npm_config_cache: string;
-		npm_config_engine_strict: string;
 		npm_config_globalconfig: string;
 		npm_config_global_prefix: string;
 		npm_config_init_module: string;
@@ -175,15 +175,21 @@ declare module '$env/dynamic/private' {
 		npm_config_node_gyp: string;
 		npm_config_noproxy: string;
 		npm_config_prefix: string;
-		npm_config_resolution_mode: string;
 		npm_config_userconfig: string;
 		npm_config_user_agent: string;
 		npm_execpath: string;
 		npm_lifecycle_event: string;
 		npm_lifecycle_script: string;
 		npm_node_execpath: string;
+		npm_package_dev: string;
+		npm_package_dev_optional: string;
+		npm_package_engines_node: string;
+		npm_package_integrity: string;
 		npm_package_json: string;
 		npm_package_name: string;
+		npm_package_optional: string;
+		npm_package_peer: string;
+		npm_package_resolved: string;
 		npm_package_version: string;
 		NPM_PREFIX_NPM_CLI_JS: string;
 		NUMBER_OF_PROCESSORS: string;
